@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ng-bootstrap alert demo - basic</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body style="scroll-behavior: smooth;">
+    <app-nav></app-nav>
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 15%;">
+            <div class="col-md-6" style="text-align: center;align-content: center; margin-top: 10%;">
+                <span style="font-size: 5em; cursor: pointer;"><a href="#lib">Libraries</a></span>
+            </div>
+            <div class="col-md-6">
+                <img routerLink="/bootstrap"
+                    src="https://img.freepik.com/free-vector/university-campus-library-bookcases-flat-composition-with-students-reading-books-articles-with-bookshelves_1284-30797.jpg?size=626&ext=jpg&ga=GA1.2.1805835126.1594096907"
+                    width="100%" alt=""></div>
+
+        </div>
+
+        <div class="lib" id="lib">
+            <span style="font-size: 3em; cursor: pointer; margin-left: 10%;"><a>Angular Libraries</a></span>
+
+            <!-- Card Wider -->
+            <div class="row" style="margin:10% ;">
+                <div class="col-md-3" *ngFor="let lib of libs">
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top"
+                                src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                                alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body">
+
+                            <!-- Title -->
+                            <h4 class="card-title">{{lib.name}}</h4>
+                            <!-- Text -->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <!-- Button -->
+                            <a routerLink={{lib.link}} class="btn btn-primary">Button</a>
+
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                </div>
+            </div>
+
+            <!-- Card Wider -->
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

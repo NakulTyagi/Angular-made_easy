@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ng-bootstrap alert demo - basic</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <app-nav></app-nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 border-right">
+                <div>
+                    <div class="sidebar">
+
+                        <div class="toc-item mb-4 active"><a class="toc-link"
+                                style=" text-align: center; font-size: 1.5em; " href="#/components">Components</a>
+                            <ul class="nav flex-column" style="color:black;text-align: center; margin-top: 10%;">
+                                <li><a class="toc-link" href="#/components/accordion">Accordion</a></li>
+                                <li><a class="toc-link" href="#/components/alert">Alert</a></li>
+                                <li class="active"><a class="toc-link" href="#/components/buttons">Buttons</a></li>
+                                <li><a class="toc-link" href="#/components/carousel">Carousel</a></li>
+                                <li><a class="toc-link" href="#/components/collapse">Collapse</a></li>
+                                <li><a class="toc-link" href="#/components/datepicker">Datepicker</a></li>
+                                <li><a class="toc-link" href="#/components/dropdown">Dropdown</a></li>
+                                <li><a class="toc-link" href="#/components/modal">Modal</a></li>
+                                <li><a class="toc-link" href="#/components/nav">Nav</a></li>
+                                <li><a class="toc-link" href="#/components/pagination">Pagination</a></li>
+                                <li><a class="toc-link" href="#/components/popover">Popover</a></li>
+                                <li><a class="toc-link" href="#/components/progressbar">Progressbar</a></li>
+                                <li><a class="toc-link" href="#/components/rating">Rating</a></li>
+                                <li><a class="toc-link" href="#/components/table">Table</a></li>
+                                <li><a class="toc-link" href="#/components/tabset">Tabset</a></li>
+                                <li><a class="toc-link" href="#/components/timepicker">Timepicker</a></li>
+                                <li><a class="toc-link" href="#/components/toast">Toast</a></li>
+                                <li><a class="toc-link" href="#/components/tooltip">Tooltip</a></li>
+                                <li><a class="toc-link" href="#/components/typeahead">Typeahead</a></li>
+                                <!---->
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
+
+            </div>
+            <div class="col-md-10">
+                <hr>
+
+                <p>
+                    This is a demo example forked from the <strong>ng-bootstrap</strong> project: Angular powered
+                    Bootstrap.
+                    Visit <a href="https://ng-bootstrap.github.io/" target="_blank">https://ng-bootstrap.github.io</a>
+                    for more
+                    widgets and demos.
+                </p>
+
+                <hr>
+                <div class="alert" id="alert">
+                    <p>
+                        <ngb-alert [dismissible]="false">
+                            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                        </ngb-alert>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
