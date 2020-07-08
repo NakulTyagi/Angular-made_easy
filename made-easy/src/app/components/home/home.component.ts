@@ -26,6 +26,20 @@ export class HomeComponent implements OnInit {
   }, {
     name: "Bootstrap",
     link: "/bootstrap"
+  }, {
+    name: "Bootstrap",
+    link: "/bootstrap"
+  }, {
+    name: "Bootstrap",
+    link: "/bootstrap"
+  }, {
+    name: "Bootstrap",
+    link: "/bootstrap"
+  }, {
+    name: "Bootstrap",
+    link: "/bootstrap"
   }]
+
+
 
 }

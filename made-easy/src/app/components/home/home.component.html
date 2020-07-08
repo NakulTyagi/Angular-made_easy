@@ -14,25 +14,34 @@
 </head>
 
 <body style="scroll-behavior: smooth;">
-    <app-nav></app-nav>
-    <div class="container-fluid">
-        <div class="row" style="margin-bottom: 15%;">
-            <div class="col-md-6" style="text-align: center;align-content: center; margin-top: 10%;">
-                <span style="font-size: 5em; cursor: pointer;"><a href="#lib">Libraries</a></span>
+
+    <div class="container" style="scroll-behavior: smooth;margin-top: 10%;">
+        <div class="row" style="margin-bottom: 20%;">
+            <div class="col-md-6" style=" margin-top: 10%;">
+                <span style="font-size: 5em;cursor: pointer;"><a href="#lib"><img
+                            src="https://ih1.redbubble.net/image.457032641.1770/raf,750x1000,075,t,FFFFFF:97ab1c12de.u1.jpg"
+                            width="90" alt="">
+                        Libraries</a></span><br>
+                <span style="font-size: 2em; cursor: pointer;">Providing easy access to Angular
+                    libraries to make your</span>
+                <span style="font-size: 2em; margin-left: 5%; cursor: pointer;">Angular
+                    experience
+                    fun.</span>
+
             </div>
             <div class="col-md-6">
                 <img routerLink="/bootstrap"
-                    src="https://img.freepik.com/free-vector/university-campus-library-bookcases-flat-composition-with-students-reading-books-articles-with-bookshelves_1284-30797.jpg?size=626&ext=jpg&ga=GA1.2.1805835126.1594096907"
+                    src="https://img.freepik.com/free-vector/boy-studying-with-book_113065-238.jpg?size=626&ext=jpg"
                     width="100%" alt=""></div>
 
         </div>
 
         <div class="lib" id="lib">
-            <span style="font-size: 3em; cursor: pointer; margin-left: 10%;"><a>Angular Libraries</a></span>
+            <span style="font-size: 3em; cursor: pointer;"><a>Angular Libraries</a></span>
 
             <!-- Card Wider -->
-            <div class="row" style="margin:10% ;">
-                <div class="col-md-3" *ngFor="let lib of libs">
+            <div class="row" style="margin-top:3% ; margin-bottom: 10%;">
+                <div class="col-md-3" *ngFor="let lib of libs" style="margin-bottom: 3%;">
                     <!-- Card -->
                     <div class="card">
 
