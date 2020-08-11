@@ -5,6 +5,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { TranslateComponent } from './components/translate/translate.component';
+import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
+import { DeployComponent } from './components/deploy/deploy.component';
+
 
 const routes: Routes = [{
   path: '',
@@ -28,6 +31,14 @@ const routes: Routes = [{
 }, {
   path: 'maps',
   component: MapsComponent,
+
+}, {
+  path: 'pdf',
+  component: PdfViewerComponent,
+
+}, {
+  path: 'deploy',
+  component: DeployComponent,
 
 }];
 

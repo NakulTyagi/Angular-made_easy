@@ -1,0 +1,8 @@
+<div style="margin: 5%;">
+    <h3>PDF Viewer</h3>
+    <p>Description</p>
+    <a href="https://github.com/VadimDez/ng2-pdf-viewer/blob/master/README.md">link</a><br>
+    <input (change)="onFileSelected()" type="file" id="file">
+
+    <pdf-viewer [src]="pdfSrc" [render-text]="true" style="display: block;"></pdf-viewer>
+</div>

@@ -24,11 +24,11 @@ export class HomeComponent implements OnInit {
     name: "Translate",
     link: "/translate"
   }, {
-    name: "Bootstrap",
-    link: "/bootstrap"
+    name: "PDF viewer",
+    link: "/pdf"
   }, {
-    name: "Bootstrap",
-    link: "/bootstrap"
+    name: "Deploy",
+    link: "/deploy"
   }, {
     name: "Bootstrap",
     link: "/bootstrap"
