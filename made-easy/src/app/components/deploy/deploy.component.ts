@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-deploy',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeployComponent implements OnInit {
 
-  constructor() { }
+  name = 'Set iframe source';
+  url: string = "https://docs.google.com/spreadsheets/d/1vEFsyhHEw2UGNfwuzN9XsqxtqKQlXNRZBwhL4ZNOX24/edit#gid=1292408371";
+  urlSafe: SafeResourceUrl;
 
-  ngOnInit(): void {
+  constructor(public sanitizer: DomSanitizer) { }
+
+  ngOnInit() {
+    this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
   }
 
 }
