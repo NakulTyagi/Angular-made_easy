@@ -7,6 +7,7 @@ import { MapsComponent } from './components/maps/maps.component';
 import { TranslateComponent } from './components/translate/translate.component';
 import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
 import { DeployComponent } from './components/deploy/deploy.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 
 const routes: Routes = [{
@@ -39,6 +40,10 @@ const routes: Routes = [{
 }, {
   path: 'deploy',
   component: DeployComponent,
+
+}, {
+  path: 'file-upload',
+  component: FileUploadComponent,
 
 }];
 

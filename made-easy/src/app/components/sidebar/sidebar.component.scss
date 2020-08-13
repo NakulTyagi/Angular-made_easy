@@ -2,12 +2,11 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
   }
-  
   .sidebar {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    // background-color: #f1f1f1;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -21,12 +20,13 @@ body {
   }
    
   .sidebar a.active {
-    background-color: #3e84e0;
+    background-color: #4CAF50;
     color: white;
   }
   
   .sidebar a:hover:not(.active) {
-    background-color: #555;
+    background: linear-gradient(110deg, #fdcd3b 90%, #ffed4b 10%);
+  
     color: white;
   }
   
@@ -36,24 +36,25 @@ body {
     height: 1000px;
   }
   
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 600px) {
     .sidebar {
       width: 100%;
       height: auto;
       position: relative;
     }
-      .sidebar{
-          display:flex;
-      }
-    div.content {
-          margin-left: 0;
-      }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
   }
   
   @media screen and (max-width: 400px) {
-      .sidebar{
-          display:flex;
-          flex-direction:column;
-          text-align:center;
-      }
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  
+  
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
   }

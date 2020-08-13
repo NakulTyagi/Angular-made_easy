@@ -6,6 +6,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FileUploadModule } from 'ng2-file-upload';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,7 @@ import { TranslateComponent } from './components/translate/translate.component';
 import { PdfViewerComponent } from './components/pdf-viewer/pdf-viewer.component';
 import { DeployComponent } from './components/deploy/deploy.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -34,10 +36,12 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     TranslateComponent,
     PdfViewerComponent,
     DeployComponent,
-    SidebarComponent
+    SidebarComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
+    FileUploadModule,
     PdfViewerModule,
     AppRoutingModule,
     NgbModule,
